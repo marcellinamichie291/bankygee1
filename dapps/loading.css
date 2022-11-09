@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.texts-caption {
+  position: absolute;
+  margin-top: 50vh;
+  text-align: center;
+}
+.card-title.caption{
+  text-align: center;
+}
+.bar-image {
+  position: absolute;
+  margin-top: -30vh;
+  text-align: center;
+}
+.liltext{
+  padding-top: 10%;
+  color: rgb(150, 146, 146);
+  font-style: italic;
+}
+.card{
+  border-radius: 5px;
+  width: 20rem;
+  font-size: 1.3em;
+}
+.card-title{
+  font-size: 1.6em;
+}
+.card-subtitle{
+  font-size: 1.5em;
+}
+/* @media only screen and (max-width: 600px){
+  .texts-caption{
+    font-size: 1.5em;
+  }
+  .card-title.caption{
+    font-size: 2em;
+  }
+  .bar-image{
+    width: 300px;
+    height: 350px;
+  }
+} */
+
+
+.spinner {
+  animation: rotator 1.4s linear infinite;
+}
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+ }
+  100% {
+    transform: rotate(270deg);
+ }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+@keyframes colors {
+  0% {
+    stroke: #4db1bc;
+ }
+  25% {
+    stroke: #4db1bc;
+ }
+  50% {
+    stroke: #4db1bc;
+ }
+  75% {
+    stroke: #4db1bc;
+ }
+  100% {
+    stroke: #4db1bc;
+ }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+ }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+ }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+ }
+}
